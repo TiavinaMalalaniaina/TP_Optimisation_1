@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteRule ^grocery/welcome-to-nita-the-first-online-grocery-at-madagascar$ client/home.php [L]
+RewriteRule ^grocery/products/noodle-canned$ client/OurProducts/NoodlesCanned.php [L]
+RewriteRule ^grocery/products/seasoning$ client/OurProducts/Seasonings.php [L]
+RewriteRule ^grocery/products/drinks$ client/OurProducts/Drinks.php [L]
+RewriteRule ^grocery/products/snacks$ client/OurProducts/Snacks.php [L]
+RewriteRule ^grocery/products/sweets$ client/OurProducts/Sweets.php [L]
+RewriteRule ^grocery/products/soap-detergent$ client/OurProducts/Soap&Detergent.php [L]
+RewriteRule ^grocery/products/shampoo$ client/OurProducts/Shampoo.php [L]
+RewriteRule ^grocery/products/hygene$ client/OurProducts/Hygene.php [L]
+RewriteRule ^grocery/products/.*-([_a-z0-9]*)$ client/OurProducts/view_product.php?pid=$1 [L]
